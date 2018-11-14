@@ -4,15 +4,16 @@ public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-        boolean isLightGreen=true; // true or false
-        boolean isLightYellow=false; // true or false
-
-        if (isLightGreen){
-            System.out.println("Drive!");
-        } else if (isLightYellow){
-            System.out.println("Slow down.");
-        } else {
-            System.out.println("Stop.");
+        int ticketPrice = 10;
+        int age = 61;
+        boolean isStudent = false;
+        if (age <= 15) {
+            ticketPrice = 5;
+        } else if (age > 60) {
+            ticketPrice = 5;
+        } else if (isStudent) {
+            ticketPrice = 5;
         }
+        System.out.println("Ticket cost " + ticketPrice + "$.");
     }
 }
