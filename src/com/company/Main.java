@@ -15,5 +15,19 @@ public class Main {
             ticketPrice = 5;
         }
         System.out.println("Ticket cost " + ticketPrice + "$.");
+
+        //Nested if Statements
+        boolean action = true;
+        boolean romance = true;
+        boolean horror = true;
+        boolean comedy = false;
+        if (action && romance) {
+            //includes action and romance
+            System.out.println("This movie include action and romance.");
+            if (comedy || horror) {
+                //everyone's preferences have been met!
+                System.out.println("This also incudes comedy or horror!");
+            }
+        }
     }
 }
