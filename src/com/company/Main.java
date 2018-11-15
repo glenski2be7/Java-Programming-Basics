@@ -4,30 +4,15 @@ public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-        int ticketPrice = 10;
-        int age = 61;
-        boolean isStudent = false;
-        if (age <= 15) {
-            ticketPrice = 5;
-        } else if (age > 60) {
-            ticketPrice = 5;
-        } else if (isStudent) {
-            ticketPrice = 5;
-        }
-        System.out.println("Ticket cost " + ticketPrice + "$.");
 
-        //Nested if Statements
-        boolean action = true;
-        boolean romance = true;
-        boolean horror = true;
-        boolean comedy = false;
-        if (action && romance) {
-            //includes action and romance
-            System.out.println("This movie include action and romance.");
-            if (comedy || horror) {
-                //everyone's preferences have been met!
-                System.out.println("This also incudes comedy or horror!");
+        int rating = 2;
+        if (rating >= 0 && rating <= 5) {
+            //rating is 0-5
+            if (rating <= 2) {
+                //rating is less than or equal to 2
+                System.out.println("What's the reason for your low rating?");
             }
+            System.out.println("Thank you for your feedback.");
         }
     }
 }
